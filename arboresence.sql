@@ -20,7 +20,11 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `arboresence`
 --
-
+--
+-- Création de la base de données `arboresence` si elle n'existe pas
+--
+CREATE DATABASE IF NOT EXISTS `arboresence`;
+USE `arboresence`;
 -- --------------------------------------------------------
 
 --
@@ -33,20 +37,6 @@ CREATE TABLE `fichiers` (
   `extension` tinytext NOT NULL,
   `taille` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
-
---
--- Déchargement des données de la table `fichiers`
---
-
-INSERT INTO `fichiers` (`id`, `path`, `extension`, `taille`) VALUES
-(283, 'Mon fichier test/Mon fichier test/Fichier.txt', '.txt', 17),
-(284, 'Mon fichier test/Mon fichier test/FlowerDetector(1).pdf', '.pdf', 3794054),
-(285, 'Mon fichier test/Mon fichier test/monSite/SSD.jpg', '.jpg', 78427),
-(286, 'Mon fichier test/Mon fichier test/monSite/index.html', '.html', 213),
-(287, 'Mon fichier test/Mon fichier test/Fichier.txt', '.txt', 17),
-(288, 'Mon fichier test/Mon fichier test/FlowerDetector(1).pdf', '.pdf', 3794054),
-(289, 'Mon fichier test/Mon fichier test/monSite/SSD.jpg', '.jpg', 78427),
-(290, 'Mon fichier test/Mon fichier test/monSite/index.html', '.html', 213);
 
 --
 -- Index pour les tables déchargées
