@@ -33,4 +33,5 @@ Pour installer et démarrer le projet, suivez ces étapes :
 2. Accédez au répertoire du projet : `cd Arboresence`
 3. Installez les dépendances : `npm install`
 4. Importer la base de données à l'aide du fichier suivant : `arboresence.sql`
-4. Démarrez le serveur : `node app.js`
+5. Démarrez le serveur : `node app.js`
+6. Allez à l'addresse suivante : `localhost:3001`
